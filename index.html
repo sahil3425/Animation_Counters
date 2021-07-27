@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+  "
+    />
+    <style>
+      .outer {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        flex-wrap:  wrap;
+        justify-content: space-evenly;
+      }
+      .counter-container {
+        display: flex;
+        width:200px;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .counter-container .counter {
+        font-size: 42px;
+        color: yellow;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="counter-container">
+        <i class="fas fa-mug-hot fa-5x"></i>
+        <div class="counter" data-target="4000"></div>
+        <span>Project Complete</span>
+      </div>
+      <div class="counter-container">
+        <i class="fas fa-users fa-5x"></i>
+        <div class="counter" data-target="1500">0</div>
+        <span>Our Happy Complete</span>
+      </div>
+      <div class="counter-container">
+        <i class="fas fa-tasks fa-5x"></i>
+        <div class="counter" data-target="2000"></div>
+        <span>Project</span>
+      </div>
+    </div>
+    <script src="counter.js"></script>
+  </body>
+</html>
